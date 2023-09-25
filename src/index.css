@@ -1,0 +1,164 @@
+:root {
+    --primary: #547795;
+    --secondary: #f3e3b3;
+    --downpour_blue: #254669;
+    --golden:#D6AD60;
+    --golden-2:#A17536;
+    --Tan:#B68D40;
+    --grey:#828991;
+    --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+    --gold-gradient: linear-gradient(97.05deg, #d0b686 3.76%, #D6AD60 100%);
+  
+    --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+    --blue: #4066ff;
+    --lightBlue: #eeeeff;
+    --shadow: 0px 20px 21px -8px #547795;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Kalam', cursive;
+  /* font-family: 'Poppins', sans-serif; */
+    scroll-behavior: smooth;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .paddings {
+    padding: 1.5rem;
+  }
+  
+  .innerWidth {
+    width: 100%;
+  }
+  
+  .flexCenter {
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .wrapper{
+    background-color: var(--downpour_blue); 
+  }
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flexColStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .flexColEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .primaryText {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .secondaryText {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+  .goldenText {
+    color: #D6AD60;;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .primary-values-Text {
+    color: var(--primary);;
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  .primary-values-2-Text {
+    color: var(--primary);;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .secondary-golden-Text {
+    color: var(--golden-2);
+    font-size: 2rem;
+  }
+  third-golden-Text{
+    color: var(--golden-2);
+    font-size: 2rem;
+  }
+  .wheatText {
+    color: wheat;
+    font-size: 5rem;
+  }
+  .greyText {
+    color: var(--grey);;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .button{
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    color: white;
+    background-color:var(--golden);
+    box-sizing: border-box;
+  border-color: var(--secondary);
+    border-radius: 50%;
+    transition: all 300ms ease-in;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  /* media queries */
+  @media (min-width: 1536px) {
+    .innerWidth {
+      max-width: 1280px;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .paddings {
+      padding: 4rem;
+    }
+  }
+  
+  @media (min-width: 1280px), (min-width: 768px) {
+    .paddings {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .primaryText {
+      font-size: 1.5rem;
+    }
+    .orangeText {
+      font-size: 1.2rem;
+    }
+  }
